@@ -1,0 +1,47 @@
+.file-card{
+    width: 300px;
+    height: 70px;
+    box-shadow: 2px 2px 5px 2px rgba(44, 44, 84, .1);
+    border-radius: 5px;
+    border: 1px solid #dfe6e9;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    position: relative;
+    cursor: pointer;
+}
+
+.file-card .menu{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(44, 44, 84, .9);
+    width: 100%;
+    height: 100%;
+    transform: translateY(100px);
+    transition: all .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.file-card .menu a{
+    text-decoration: none;
+    color: #fff;
+    margin: 15px;
+}
+.file-card .menu a img{
+    height: 30px;
+}
+
+.file-card:hover .menu{
+    transform: translateY(0px);
+}
+
+.file-card img{
+    height: 45px;
+    margin-right: 10px;
+}

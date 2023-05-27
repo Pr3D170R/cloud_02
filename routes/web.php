@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\MyController;
+use App\Http\Controllers\FileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,3 +18,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/cloud', function () {
+    return view('cloud');
+});
+
+Route::get('/create', function () {
+    return view('create');
+})->name('create');
+
+Route::get('/lasthans', [MyController::class, 'show']);
